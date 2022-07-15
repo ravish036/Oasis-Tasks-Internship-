@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Make your Todo List</title>
+
+
+    <!-- Favicon of the applicaation -->
+    <link rel="icon" href="to-do-list.png">̥
+
+    <!-- BootStrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <meta charset="UTF-8"> 
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700;900&family=Ubuntu&display=swap" rel="stylesheet"> -->
+
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/c98902a5b5.js" crossorigin="anonymous"></script>
+    <link href="//db.onlinewebfonts.com/c/709d1caff6235700748ce26bcacf04f8?family=Hunt" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    <div class="container-fluid">
+
+        <!-- Heading for a todo list -->
+        <h1 class="top-heading">Generate your To-Do list </h1>
+
+        <!-- sections of list -->
+        <div class="row">
+
+            <!-- section one for pending tasks -->
+            
+            <div class="col-lg-6">
+                <div class="todo not-done">
+
+                    <h1>Todos</h1>
+
+                    <!-- Input Feild -->
+                    <div class="input-group mb-6">
+                        <input type="text" class="form-control add-todo" placeholder="Enter your task here .." aria-label="Recipient's username" aria-describedby="button-addon2">
+                      
+                    </div>
+                    
+                    <!-- mark done Button --->
+                    <button id="check-all" type="button" class="btn btn-outline-success btn-lg">Mark All done</button>
+                    <br>
+
+                    <!-- list section -->
+                    <ul id="sortable" class="list-unstyled list-group"></ul>
+                    <li class="ui-state-default">
+                        <div class="checkbox">
+                            <label>
+                            </label>
+                        </div>
+                    </li>
+                    
+                    <!-- Footer section -->
+                    <div class="todo-footer">
+                        <strong><span class="count-todos"></span></strong> Items Left
+                    </div>
+                </div>
+            </div>
+
+            <!-- section two for completed tasks -->
+            <div class="col-md-6 section-two">
+                <div class="todolist " id="doneItem">
+
+                    <h1>Already Done</h1>
+                    <ul id="done-items" class="list-unstyled">
+                        <li><button id="rbtn" class="remove-item btn btn-default btn-xs pull-right">
+                            <span class="glyphicon glyphicon-remove"></span></button></li>
+                        
+                           
+                        </ul>
+                </div>
+             </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
